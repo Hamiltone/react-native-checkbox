@@ -106,7 +106,7 @@ class CheckBox extends React.Component<Props> {
 
     const {value} = event.nativeEvent;
     // @ts-ignore
-    nullthrows(this._nativeRef).setNativeProps({value});
+    // nullthrows(this._nativeRef).setNativeProps({value});
     onChange && onChange(event);
     onValueChange && onValueChange(value);
   };
